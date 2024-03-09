@@ -1,0 +1,203 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #fff;
+}
+.container {
+     position: relative;
+     width: 460px;
+     height: 530px;
+     background: transparent;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+     padding: 0 45px;
+     overflow: hidden;
+}
+.container .login-box .google-logo {
+     text-align: center;
+     font-size: 30px;
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+.container .login-box .google-logo span {
+     margin: -3.5px;
+}
+.container .login-box .google-logo span:nth-child(1) {
+     color: #4C89F9;
+}
+.container .login-box .google-logo span:nth-child(2) {
+     color: #F04641;
+}
+.container .login-box .google-logo span:nth-child(3) {
+     color: #FFC311;
+}
+.container .login-box .google-logo span:nth-child(4) {
+     color: #4C89F9;
+}
+.container .login-box .google-logo span:nth-child(5) {
+     color: #34AA55;
+}
+.container .login-box .google-logo span:nth-child(6) {
+     color: #F04641;
+}
+.container .login-box {
+     position: relative;
+     width: 100%;
+}
+.login-box .page-box {
+     display: flex;
+     flex-direction: column;
+}
+.page-box .page {
+     width: 100%;
+}
+.page-box .page.email-page {
+     transform: translateX(0);
+     transition: .3s ease-in-out;
+}
+.page-box.active-pass .page.email-page {
+     transform: translateX(-500px);
+}
+.page-box .page.password-page {
+     position: absolute;
+     transform: translateX(500px);
+     margin-top: 140px;
+     transition: .3s ease-in-out;
+}
+.page-box.active-pass .page.password-page {
+     transform: translateX(0);
+}
+.page-box .login-title {
+     text-align: center;
+     color: #323232;
+     margin-bottom: 40px;
+}
+.login-title h2 {
+     font-size: 32px;
+     line-height: 1.5;
+}
+.login-title p {
+     font-size: 16px;
+     font-weight: 500;
+}
+.page .input-box {
+     position: relative;
+     width: 100%;
+     height: 55px;
+}
+.input-box input {
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     border: 2px solid rgba(0, 0, 0, 0.2);
+     outline: none;
+     border-radius: 5px;
+     font-size: 16px;
+     color: #323232;
+     padding: 0 20px;
+     transition: .5s ease;
+}
+.input-box input:focus,
+.input-box input:valid {
+     border-color: #1C66EB;
+}
+.input-box label {
+     position: absolute;
+     top: 50%;
+     left: 20px;
+     transform: translateY(-50%);
+     font-size: 18px;
+     color: #323232;
+     pointer-events: none;
+     transition: .5s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+     top: 1px;
+     left: 12px;
+     font-size: 13px;
+     color: #1C66EB;
+     padding: 0 10px;
+     background: #fff;
+}
+.forgot {
+     margin-top: 6px;
+}
+.forgot.show {
+     margin: 10px 0 70px;
+     display: flex;
+     justify-content: space-between;
+}
+.forgot.show label {
+     font-size: 15px;
+     color: #323232;
+     cursor: pointer;
+}
+.forgot.show label input {
+     accent-color: #1C66EB;
+     cursor: pointer;
+     margin-right: 5px;
+}
+.forgot a {
+     font-size: 15px;
+     color: #1C66EB;
+     text-decoration: none;
+}
+.forgot a:hover {
+     text-decoration: underline;
+}
+.guest-mode {
+     margin: 40px 0;
+}
+.guest-mode p {
+     font-size: 15px;
+     color: #323232;
+}
+.guest-mode a {
+     font-size: 15px;
+     color: #1C66EB;
+     text-decoration: none;
+}
+.guest-mode a:hover {
+     text-decoration: underline;
+}
+.btn-box {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.btn-box a {
+     font-size: 15px;
+     color: #1C66EB;
+     text-decoration: none;
+}
+.btn-box a:hover {
+     text-decoration: underline;
+}
+.btn-box button {
+     width: 90px;
+     height: 40px;
+     background: #1C66EB;
+     border: 2px solid #1C66EB;
+     outline: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+     color: #fff;
+     font-weight: 600;
+}
+.btn-box button:nth-child(1) {
+     background: transparent;
+     color: #1C66EB;
+}
